@@ -213,9 +213,9 @@ int main(void)
 
   while (1)
   {
-	  if(counter <= 0)
+	  if(counter >= 10)
 	  {
-		  counter = 9;
+		  counnter = 0;
 	  }
 	  switch(state)
 	  {
@@ -225,7 +225,7 @@ int main(void)
 			  for(int i = 5; i >= 3; i--)
 			  {
 				  display7SEG(counter);
-				  counter--;
+				  counter++;
 				  HAL_Delay(1000);
 			  }
 			  // HAL_Delay(3000);
@@ -237,7 +237,7 @@ int main(void)
 			  for(int i = 2; i >= 1; i--)
 			  {
 				  display7SEG(counter);
-				  counter--;
+				  counter++;
 				  HAL_Delay(1000);
 			  }
 			  // HAL_Delay(2000);
@@ -251,7 +251,7 @@ int main(void)
 			  for(int i = 5; i >= 3; i--)
 			  {
 				  display7SEG(counter);
-				  counter--;
+				  counter++;
 				  HAL_Delay(1000);
 			  }
 			  // HAL_Delay(3000);
@@ -263,7 +263,7 @@ int main(void)
 	  		  for(int i = 2; i >= 1; i--)
 			  {
 				  display7SEG(counter);
-				  counter--;
+				  counter++;
 				  HAL_Delay(1000);
 			  }
 			  // HAL_Delay(2000);

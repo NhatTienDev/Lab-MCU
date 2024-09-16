@@ -142,3 +142,647 @@ Finished building: Lab1_3.hex
  
 Finished building: Lab1_3.list
  
+18:28:37 **** Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4832	     20	   1572	   6424	   1918	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:03:22 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:218:5: error: 'counnter' undeclared (first use in this function); did you mean 'counter'?
+  218 |     counnter = 0;
+      |     ^~~~~~~~
+      |     counter
+../Core/Src/main.c:218:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:07:22 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:218:5: error: 'counnter' undeclared (first use in this function); did you mean 'counter'?
+  218 |     counnter = 0;
+      |     ^~~~~~~~
+      |     counter
+../Core/Src/main.c:218:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:07:27 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:218:5: error: 'counnter' undeclared (first use in this function); did you mean 'counter'?
+  218 |     counnter = 0;
+      |     ^~~~~~~~
+      |     counter
+../Core/Src/main.c:218:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:07:38 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Lab1_3.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\Lab_MCU\Lab1_3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab1_3.elf
+ 
+arm-none-eabi-size   Lab1_3.elf 
+arm-none-eabi-objdump -h -S  Lab1_3.elf  > "Lab1_3.list"
+arm-none-eabi-objcopy  -O ihex  Lab1_3.elf  "Lab1_3.hex"
+arm-none-eabi-objcopy  -O binary  Lab1_3.elf  "Lab1_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab1_3.bin
+Finished building: Lab1_3.hex
+ 
+ 
+Finished building: Lab1_3.list
+ 
+19:07:44 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:07:47 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:07:49 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:07:53 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:07:56 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:08:11 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:08:14 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:08:16 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:08:18 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:08:20 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:08:22 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:08:49 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:08:55 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:08:57 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:09:00 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:09:02 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:09:07 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:09:15 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:09:22 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:13:23 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:13:26 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:13:28 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:13:30 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:13:33 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:13:36 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:13:38 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:13:41 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:13:45 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:13:53 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:13:58 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:01 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:04 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:06 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:08 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:12 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:15 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:19 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:21 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:23 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:32 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:50 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:14:59 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:16:02 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:16:22 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:17:12 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:18:27 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:18:38 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:18:51 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:20:06 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Lab1_3.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\Lab_MCU\Lab1_3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab1_3.elf
+ 
+arm-none-eabi-size   Lab1_3.elf 
+arm-none-eabi-objdump -h -S  Lab1_3.elf  > "Lab1_3.list"
+arm-none-eabi-objcopy  -O ihex  Lab1_3.elf  "Lab1_3.hex"
+arm-none-eabi-objcopy  -O binary  Lab1_3.elf  "Lab1_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+Finished building: Lab1_3.hex
+Finished building: Lab1_3.bin
+Finished building: Lab1_3.list
+ 
+ 
+ 
+ 
+19:20:09 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:20:13 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:20:17 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:20:30 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:27:30 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:27:31 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:27:37 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:27:39 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:27:43 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:27:49 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:27:53 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:28:06 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:28:09 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:28:11 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:28:18 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:28:23 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:28:25 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:28:27 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:28:42 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:29:03 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:29:09 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:29:23 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:29:32 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:30:04 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:30:50 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:31:09 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:31:20 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:31:28 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:31:36 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 
+19:31:42 **** Incremental Build of configuration Debug for project Lab1_3 ****
+make -j4 all 
+arm-none-eabi-size   Lab1_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5904	     20	   1572	   7496	   1d48	Lab1_3.elf
+Finished building: default.size.stdout
+ 

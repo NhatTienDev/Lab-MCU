@@ -54,109 +54,7 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void display7SEG(int num)
-{
-	if(num == 0)
-	{
-		HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, RESET);
-		HAL_GPIO_WritePin(b_GPIO_Port, b_Pin, RESET);
-		HAL_GPIO_WritePin(c_GPIO_Port, c_Pin, RESET);
-		HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, RESET);
-		HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, RESET);
-		HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, RESET);
-		HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, SET);
-	}
-	else if(num == 1)
-	{
-		HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, SET);
-		HAL_GPIO_WritePin(b_GPIO_Port, b_Pin, RESET);
-		HAL_GPIO_WritePin(c_GPIO_Port, c_Pin, RESET);
-		HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, SET);
-		HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, SET);
-		HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, SET);
-		HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, SET);
-	}
-	else if(num == 2)
-	{
-		HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, RESET);
-		HAL_GPIO_WritePin(b_GPIO_Port, b_Pin, RESET);
-		HAL_GPIO_WritePin(c_GPIO_Port, c_Pin, SET);
-		HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, RESET);
-		HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, RESET);
-		HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, SET);
-		HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, RESET);
-	}
-	else if(num == 3)
-	{
-		HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, RESET);
-		HAL_GPIO_WritePin(b_GPIO_Port, b_Pin, RESET);
-		HAL_GPIO_WritePin(c_GPIO_Port, c_Pin, RESET);
-		HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, RESET);
-		HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, SET);
-		HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, SET);
-		HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, RESET);
-	}
-	else if(num == 4)
-	{
-		HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, SET);
-		HAL_GPIO_WritePin(b_GPIO_Port, b_Pin, RESET);
-		HAL_GPIO_WritePin(c_GPIO_Port, c_Pin, RESET);
-		HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, SET);
-		HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, SET);
-		HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, RESET);
-		HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, RESET);
-	}
-	else if(num == 5)
-	{
-		HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, RESET);
-		HAL_GPIO_WritePin(b_GPIO_Port, b_Pin, SET);
-		HAL_GPIO_WritePin(c_GPIO_Port, c_Pin, RESET);
-		HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, RESET);
-		HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, SET);
-		HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, RESET);
-		HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, RESET);
-	}
-	else if(num == 6)
-	{
-		HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, RESET);
-		HAL_GPIO_WritePin(b_GPIO_Port, b_Pin, SET);
-		HAL_GPIO_WritePin(c_GPIO_Port, c_Pin, RESET);
-		HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, RESET);
-		HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, RESET);
-		HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, RESET);
-		HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, RESET);
-	}
-	else if(num == 7)
-	{
-		HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, RESET);
-		HAL_GPIO_WritePin(b_GPIO_Port, b_Pin, RESET);
-		HAL_GPIO_WritePin(c_GPIO_Port, c_Pin, RESET);
-		HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, SET);
-		HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, SET);
-		HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, SET);
-		HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, SET);
-	}
-	else if(num == 8)
-	{
-		HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, RESET);
-		HAL_GPIO_WritePin(b_GPIO_Port, b_Pin, RESET);
-		HAL_GPIO_WritePin(c_GPIO_Port, c_Pin, RESET);
-		HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, RESET);
-		HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, RESET);
-		HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, RESET);
-		HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, RESET);
-	}
-	else if(num == 9)
-	{
-		HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, RESET);
-		HAL_GPIO_WritePin(b_GPIO_Port, b_Pin, RESET);
-		HAL_GPIO_WritePin(c_GPIO_Port, c_Pin, RESET);
-		HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, RESET);
-		HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, SET);
-		HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, RESET);
-		HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, RESET);
-	}
-}
+
 /* USER CODE END 0 */
 
 /**
@@ -200,47 +98,23 @@ int main(void)
   HAL_GPIO_WritePin(LED_YELLOW2_GPIO_Port, LED_YELLOW2_Pin, SET);
   HAL_GPIO_WritePin(LED_GREEN2_GPIO_Port, LED_GREEN2_Pin, SET);
 
-  HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, SET);
-  HAL_GPIO_WritePin(b_GPIO_Port, b_Pin, SET);
-  HAL_GPIO_WritePin(c_GPIO_Port, c_Pin, SET);
-  HAL_GPIO_WritePin(d_GPIO_Port, d_Pin, SET);
-  HAL_GPIO_WritePin(e_GPIO_Port, e_Pin, SET);
-  HAL_GPIO_WritePin(f_GPIO_Port, f_Pin, SET);
-  HAL_GPIO_WritePin(g_GPIO_Port, g_Pin, SET);
-
   int state = 1;
   int counter = 0;
 
   while (1)
   {
-	  if(counter <= 0)
-	  {
-		  counter = 9;
-	  }
 	  switch(state)
 	  {
 	  	  case 1:
 			  HAL_GPIO_TogglePin(LED_RED1_GPIO_Port, LED_RED1_Pin);
 			  HAL_GPIO_TogglePin(LED_GREEN2_GPIO_Port, LED_GREEN2_Pin);
-			  for(int i = 5; i >= 3; i--)
-			  {
-				  display7SEG(counter);
-				  counter--;
-				  HAL_Delay(1000);
-			  }
-			  // HAL_Delay(3000);
+			  HAL_Delay(3000);
 			  HAL_GPIO_TogglePin(LED_GREEN2_GPIO_Port, LED_GREEN2_Pin);
 			  state = 2;
 			  break;
 	  	  case 2:
 			  HAL_GPIO_TogglePin(LED_YELLOW2_GPIO_Port, LED_YELLOW2_Pin);
-			  for(int i = 2; i >= 1; i--)
-			  {
-				  display7SEG(counter);
-				  counter--;
-				  HAL_Delay(1000);
-			  }
-			  // HAL_Delay(2000);
+			  HAL_Delay(2000);
 			  HAL_GPIO_TogglePin(LED_YELLOW2_GPIO_Port, LED_YELLOW2_Pin);
 			  HAL_GPIO_TogglePin(LED_RED1_GPIO_Port, LED_RED1_Pin);
 			  state = 3;
@@ -248,25 +122,13 @@ int main(void)
 	  	  case 3:
 	  		  HAL_GPIO_TogglePin(LED_RED2_GPIO_Port, LED_RED2_Pin);
 			  HAL_GPIO_TogglePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin);
-			  for(int i = 5; i >= 3; i--)
-			  {
-				  display7SEG(counter);
-				  counter--;
-				  HAL_Delay(1000);
-			  }
-			  // HAL_Delay(3000);
+			  HAL_Delay(3000);
 			  HAL_GPIO_TogglePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin);
 			  state = 4;
 			  break;
 	  	  case 4:
 	  		  HAL_GPIO_TogglePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin);
-	  		  for(int i = 2; i >= 1; i--)
-			  {
-				  display7SEG(counter);
-				  counter--;
-				  HAL_Delay(1000);
-			  }
-			  // HAL_Delay(2000);
+			  HAL_Delay(2000);
 			  HAL_GPIO_TogglePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin);
 			  HAL_GPIO_TogglePin(LED_RED2_GPIO_Port, LED_RED2_Pin);
 			  state = 1;
