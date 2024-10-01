@@ -196,7 +196,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, RESET);
+  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
   setTimer1(50);
   int EN_state = 0;
 
@@ -204,7 +204,6 @@ int main(void)
   {
 	  if(timer1_flag == 1)
 	  {
-		  setTimer1(50);
 		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
 
 		  switch(EN_state)
@@ -222,6 +221,7 @@ int main(void)
 			  EN_state = 0;
 			  break;
 		  }
+		  setTimer1(50);
 	  }
     /* USER CODE END WHILE */
 
