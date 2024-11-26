@@ -579,7 +579,7 @@ void SCH_Update(void)
 {
  80003e8:	b480      	push	{r7}
  80003ea:	af00      	add	r7, sp, #0
-	if (SCH_tasks_G[0].Delay > 0)
+	if(SCH_tasks_G[0].Delay > 0)
  80003ec:	4b09      	ldr	r3, [pc, #36]	; (8000414 <SCH_Update+0x2c>)
  80003ee:	685b      	ldr	r3, [r3, #4]
  80003f0:	2b00      	cmp	r3, #0

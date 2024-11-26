@@ -12,7 +12,7 @@ uint8_t current_index_task = 0;
 
 void SCH_Update(void)
 {
-	if(SCH_tasks_G[0].Delay > 0)
+	if (SCH_tasks_G[0].Delay > 0)
 	{
 		SCH_tasks_G[0].Delay = SCH_tasks_G[0].Delay - 1;
 	}
