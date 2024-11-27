@@ -1,5 +1,0 @@
-scheduler.c:13:6:SCH_Update	4	static
-scheduler.c:22:6:SCH_MakeSpaceForNewTask	32	static
-scheduler.c:30:6:SCH_Add_Task	56	static
-scheduler.c:63:6:SCH_Delete_Task	32	static
-scheduler.c:78:6:SCH_Dispatch_Tasks	40	static
