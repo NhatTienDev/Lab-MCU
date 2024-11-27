@@ -6,7 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="SCH_Upadate"/>
+			<item value="SCH_Upadate_Task"/>
+			<item value="SCH_Delete_Task"/>
 		</list>
 		<list key="replacehistory">
 		</list>
