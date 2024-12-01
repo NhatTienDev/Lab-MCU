@@ -1,0 +1,4 @@
+fsm.c:26:6:cmdEqualRST	16	static
+fsm.c:32:6:cmdEqualOK	16	static
+fsm.c:38:6:command_parser	8	static
+fsm.c:75:6:uart_communication	112	static
