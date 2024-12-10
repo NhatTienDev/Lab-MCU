@@ -62,19 +62,16 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-// Automatically called when the receiving data process through UART completed
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	if(huart -> Instance == USART2)
 	{
-		// Retransmit the received character through UART
 		HAL_UART_Transmit(&huart2, &buffer_character, 1, 500);
 		buffer[buffer_index] = buffer_character;
 		buffer_index++;
 
 		if(buffer_index == MAX_BUFFER_SIZE) buffer_index = 0;
 		buffer_flag = 1;
-		// Allow UART receive next character without waiting for callback function finish
 		HAL_UART_Receive_IT(&huart2, &buffer_character, 1);
 	}
 }
